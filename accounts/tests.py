@@ -7,7 +7,7 @@ User = get_user_model()
 
 
 class AccountsTest(APITestCase):
-    def test_create_account(self):
+    def test_register_account(self):
         url = reverse('account_register')
         data = {
             'username': 'test_user',
